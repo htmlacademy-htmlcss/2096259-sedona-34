@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Анастасия Сурнова](https://up.htmlacademy.ru/htmlcss/34/user/2096259).
-* Наставник: `Неизвестно`.
+* Наставник: [Михаил Кислых](https://htmlacademy.ru/profile/smart-grizzly).
 
 ---
 
