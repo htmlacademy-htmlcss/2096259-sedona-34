@@ -13,5 +13,66 @@
     font-display: swap;
 }
 body {
-    font-family: "PT Sans";
+    font-family: "PT Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 21px;
+    background-color: #fbf7f4;
+    color: #242424;
+}
+.page-header {
+    background-color: #ffffff;
+    color: #000000;
+}
+.navigation-link {
+    line-height: 26px;
+    font-weight: 700;
+    font-size: 20px;
+    color: #000000;
+    text-align: center;
+    background-color: #ffffff;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.page-header {
+    background-image: url("../images/index/index-background.jpg");
+    background-color: blue;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+.slogan {
+    text-align: center;
+}
+.slogan h3 {
+    line-height: 36px;
+    font-weight: 700;
+    font-size: 30px;
+    color: #000000;
+    background-color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.slogan p {
+    line-height: 26px;
+    font-size: 22px;
+    color: #000000;
+    background-color: #ffffff;
+    text-decoration: none; 
+}
+.advantages-list {
+    text-align: center;
+}
+.more {
+    text-align: center; 
+}
+.more h3 {
+    line-height: 36px;
+    font-weight: 700;
+    font-size: 30px;
+    color: #000000;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.more p {
+    
 }
