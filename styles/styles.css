@@ -33,7 +33,6 @@ body {
     background-color: #ffffff;
     text-decoration: none;
     text-transform: capitalize;
-    text-align: center;
 }
 .navigation-link-current {
     line-height: 26px;
@@ -43,8 +42,7 @@ body {
     text-align: center;
     background-color: #ffffff;
     text-decoration: underline;
-    text-transform: capitalize;
-    text-align: center;    
+    text-transform: capitalize; 
 }
 .page-header {
     background-image: url("../images/index/index-background.jpg");
@@ -192,7 +190,8 @@ body {
     text-align: center;  
     text-decoration: none;
 }
-.product-card-subtitle, .product-card-price {
+.product-card-subtitle, 
+.product-card-price {
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
