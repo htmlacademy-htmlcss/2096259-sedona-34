@@ -40,7 +40,11 @@ body {
 .page-header {
     background-color: #ffffff;
     color: #000000;
-    text-align: center;
+   /* text-align: center;*/
+}
+.navigation {
+    display: flex;
+    justify-content: space-between;
 }
 .navigation-link {
     line-height: 26px;
@@ -51,6 +55,10 @@ body {
     background-color: #ffffff;
     text-decoration: none;
     text-transform: capitalize;
+}
+.navigation-item {
+    display: inline-block;
+    margin-right: 34px;
 }
 .navigation-link-current {
     line-height: 26px;
@@ -68,14 +76,15 @@ body {
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-clip: polygon(0 0, 100% 13%, 100% 84%, 0% 100%);
-    text-align: center;
+   /* text-align: center;*/
 }
 .decoration 
 img{
     background-size: 100% auto;
 }
 .slogan {
-    text-align: center;
+    margin: auto 
+
 }
 .slogan 
 h3 {
@@ -128,7 +137,7 @@ p {
     color: #000000; 
 }
 .more {
-    text-align: center; 
+   /* text-align: center;*/
 }
 .more 
 h3 {
@@ -347,7 +356,8 @@ p {
     Height:60px;   
 }
 .page-footer {
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
 }
 .phone {
     line-height: 40px;
@@ -372,7 +382,6 @@ p {
 }
 .navigation {
     display: flex;
-    width: 1200px;
     margin: 0;
     padding: 0;
 }
@@ -392,7 +401,6 @@ p {
 }
 .head-container {
     display: flex;
-    width: 1200px;
     margin: 0 auto;
 }
 .logo {
@@ -400,26 +408,29 @@ p {
     margin: 0 auto;
 }
 .page-container {
-    width: 1200px;
     margin: 0 auto;
 }
 .advantages {
     display: flex;
     justify-content: space-between;
-    text-align: center;
     padding: 0 85px;
-    width: 1200px;
 }
 .advantages-item {
     width: 400px;
 }
-.index-columns {
+/*.index-columns {
     display: flex;
     justify-content: space-between;
     padding: 0 85;
-}
+}*/
 .liner {
     display:flex;
+    width: 400;
+    padding: 85;
+    margin: 0 auto;
+}
+.simple {
+    display: flex;
 }
 .visually-hidden {
     position: absolute;
@@ -432,4 +443,8 @@ p {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
+}
+.social-link {
+    display: inline-block;
+    margin-right: 34px;
 }
