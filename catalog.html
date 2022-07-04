@@ -6,6 +6,7 @@
      <link rel = "stylesheet" href="styles/styles.css">
   </head>
   <body class = "wrapper" >
+    <main class = "main-inner">
     <header class = "navigation-header">
       <nav class = "navigation">
         <a class = "navigation-logo" href = "index.html">
@@ -53,8 +54,9 @@
         </ul>
       </nav> 
     </header>
-    <main class = "main-inner">
     <header class = "inner-header">
+        <div class = "wrpper-filters">
+        <div class = "wrapper-breadcrumbs">
         <h1 class = "inner-header-title">
             Гостиницы Седоны
         </h1>
@@ -74,14 +76,12 @@
                 </a>
             </li>               
         </ul>
-        <section class = "catalog-products">
+        </div>
+        <div class = "catalog-filter-wrapper">
             <h2 class = "visually-hidden">
-               
                 Список товаров с фильтрами
             </h2>
-            
             <form class = "catalog-filter" action = "https://echo.htmlacademy.ru/" method = "get">
-                <div>
                 <fieldset class = "catalog-filter-group">
                     <legend class = "catalog-filter-title">
                         Инфраструктура:
@@ -107,8 +107,6 @@
                         </li>
                     </ul>
                 </fieldset>
-            </div>
-            <div>
                 <fieldset class = "catalog-filter-group">
                     <legend class = "catalog-filter-title">
                         Тип Жилья:
@@ -143,14 +141,16 @@
                 </button>
             </div>
             </form>
+        </div>
+        </div>
             <div class = "find">
                 <div class = "find-hotel-1">
             <h2 class = "find-hotel">
                 Найдено гостиниц: 38
             </h2>
             </div>
+            <div class = "find-hotel-2">
             <select class = "select-control" aria-label ="Сортировка">
-                <div class = "find-hotel-2">
                 <option value="cheap">
                     Сначала дешёвые
                 </option>
@@ -160,8 +160,8 @@
                 <option value= "expensive">
                     Сначала дорогие
                 </option>
-                </div>
             </select>
+        </div>
             <div>
             <a href = "#" class = "button button-light">
                 <span class = "visually-hidden">
@@ -183,6 +183,7 @@
             </a>
             </div>
             </div>
+            <section class = "catalog-products">
             <ul class = "product-list">
                 <li class = "product-card">
                     <a class="product-card-link" href = "#">
@@ -327,14 +328,13 @@
                 </option>
             </select>              
         </section>
-    </header>
-    </main>       
+    </header>     
     <footer class = "aside-footer">
         <h3>
           Подпишитесь на рассылку
         </h3>
         <p>
-          Только полезная информация и никакого спама,</br>
+          Только полезная информация и никакого спама,<br>
            честное бойскаутское!
         </p>
         <form action="#" method="post">
@@ -383,6 +383,7 @@
           </h2>
         </section>
       </footer>
+    </main>
     </body>
   </html>
   
