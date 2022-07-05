@@ -368,7 +368,7 @@ body {
 .more-favorites-wrapper {
     margin: 0 20px 16px 20px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .product-card-title {
@@ -408,6 +408,7 @@ body {
 
 .padination-wrapper {
     display: flex;
+    justify-content: space-between;
     margin: 30px 0 25px 0;
 }
 
@@ -432,7 +433,7 @@ body {
 .top-wrapper {
     margin: 0 20px 16px 20px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .top-ring-title {
@@ -632,6 +633,9 @@ body {
 
 .navigation-list {
     max-width: 490px;
+    display: flex;
+    flex-wrap: wrap;
+
 }
 
 .navigation-user {
