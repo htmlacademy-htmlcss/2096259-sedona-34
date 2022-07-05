@@ -58,7 +58,7 @@
       <h2 class = "visually-hidden">
         Welcome
       </h2>
-      <img class = "logo welcome" src="images/index/welcome.svg" alt = "Приветствие" width = "188" height = "45">
+      <img class = "logo-welcome" src="images/index/welcome.svg" alt = "Приветствие" width = "188" height = "45">
       <p class = "visually-hidden">
         to the gorgeous
       </p>
@@ -108,7 +108,7 @@
                 Жильё
             </h4>
             <p class = "advantages-subtitle-privilege">
-                Рекомендуем пожить в настоящем мотеле, всё как в кино!
+                Рекомендуем пожить <br> в настоящем мотеле, <br> всё как в кино!
            </p>
          </div>
          <div class="wrapper-for-list">
@@ -117,7 +117,7 @@
                 Еда
               </h4>
               <p class = "advantages-subtitle-privilege">
-                Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
+                Всегда заказывайте <br> топовый фирменный бургер, <br> вы не разочаруетесь!
               </p>
           </div>
           <div class="wrapper-for-list blue12">
@@ -126,7 +126,7 @@
                 Сувениры
               </h4>
               <p class = "advantages-subtitle-privilege">
-                Не только китайского, но и настоящего местного производства!
+                Не только китайского, <br> но и настоящего местного <br> производства!
               </p>
             </div>
             </li>
@@ -204,11 +204,12 @@
         Только полезная информация и никакого спама,<br>
          честное бойскаутское!
       </p>
-      <form action="#" method="post">
+      <form class = "follow-form" action="https://htmlacademy.ru/study" method="post">
         <label>
-          <input type="text" name="username" class = "mail follow">
+          <span class= "visually-hidden">Введите e-mail</span>
         </label>
-        <button class = "submit follow" type = "submit" value="Подписаться на рассылку">
+          <input type="email" placeholder="Ваш e-mail"  name="username" class = "mail-follow">
+        <button class = "submit-follow" type = "submit" value="Подписаться на рассылку">
           Подписаться
         </button>
       </form>
