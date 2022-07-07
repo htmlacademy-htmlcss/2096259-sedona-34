@@ -593,6 +593,7 @@ body {
     text-decoration: none;
     border-radius:0 10px 10px 0;    
     min-width: 200px;
+    cursor: pointer;
 }
 
 .mail-follow {
@@ -819,6 +820,7 @@ body {
     min-width: 160px;
     padding: 14px 15px 15px 15px;
     margin-bottom: 20px;
+    cursor: pointer;
 }
 
 .button-reset {
@@ -830,6 +832,7 @@ body {
     font-size: 16px;
     color: #ffffff;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .mode {
