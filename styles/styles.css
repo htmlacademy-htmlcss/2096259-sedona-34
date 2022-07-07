@@ -62,6 +62,16 @@ body {
     text-transform: capitalize;
 }
 
+.navigation-link.want {
+    color: #ffffff;
+    background-color: #756157;
+    width: 160px;
+    height: 37px;
+    border-radius: 4px;
+    line-height: 20px;
+    padding: 9px 15px 8px 15px;
+}
+
 .navigation-item {
     display: inline-block;
     margin-right: 34px;
@@ -311,19 +321,18 @@ body {
 .find-hotel {
     font-weight: 700;
     font-size: 30px;
-    line-height: 36px;
+    line-height: 37px;
     text-transform: uppercase;
     color:#000000;
     text-align: center;
-    margin-right: 150px;
-    margin-top: 0;
-    margin-bottom: 0;
+    margin:0 190px 0 0;
 }
 
 .button-mode {
-    display: flex;
-    justify-content: center;
-    margin-right: 8px;
+    min-width: 48px;
+    min-height: 48px;
+    border-radius: 4px;
+    margin: 4px;
 }
 
 .button-mode.last {
@@ -335,53 +344,48 @@ body {
     font-size: 18px;
     line-height: 21px;
     color: #333333;
-    max-width: 290px;
-    max-height: 50px;
-    padding-left: 20px;
-    padding-top: 14px;
-    padding-bottom: 14px;
-    padding-right: 97px;
+    border-radius: 4px;
+    min-width: 290px;
+    padding: 14px 97px 14px 20px;
     margin-right: 78px;
 }
 
 .product-card {
     display: flex;
-    flex-direction: column;
+    background-color: #ffffff;
+    flex-wrap: wrap;
+    justify-content: space-between;
     margin: 0;
+    padding: 20px; 
+    flex-grow: 1;
 }
 
-.product-card-image {
-    margin: 20px 20px 16px 20px;
+.product-card-image-hotel {
+    margin-bottom: 16px;
 }
 
 .product-card-link {
-    margin: 0;
-    padding: 0;
-}
-
-.price-wrapper {
-    margin: 0 20px 16px 20px;
-    display: flex;
-    justify-content: center;
-}
-
-.more-favorites-wrapper {
-    margin: 0 20px 16px 20px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.product-card-title {
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
     color: #000000;
     text-decoration: none;
-    margin: 0 20px 16px 20px;
+    margin-bottom: 16px;
+}
+
+.product-card-title {
+    margin: 0;
+    min-width: 300px;
 }
 
 .product-card-subtitle {
-    margin: 0 20px 0px 0;
+    width: 140px;
+    margin: 0 20px 16px 0;
+}
+
+.product-card-price {
+    min-width: 140px;
+    margin: 0 0 16px 0;
 }
 
 .product-card-subtitle, 
@@ -391,25 +395,30 @@ body {
     line-height: 21px;
     color: #333333;
     text-decoration: none;
-    min-width: 140px;
 }
 
 .product-card-button.more {
     background-color: #756157;
     text-align: center;  
-    line-height: 20px;
     font-weight: 700;
     font-size: 16px;
     color: #ffffff;
     text-decoration: none;
     border-radius:4px;
     text-transform: uppercase; 
+    min-width: 140px;
+    min-height: 37px;
+    margin: 0 20px 16px 0;
+    line-height: 37px;
 }
 
 .padination-wrapper {
     display: flex;
     justify-content: space-between;
-    margin: 30px 0 25px 0;
+    width: 1056px;
+    margin-right: 0;
+    margin: 0 0 25px 0;
+    padding: 0;
 }
 
 .padination {
@@ -421,28 +430,20 @@ body {
 .product-card-button.favorites {
     background-color: #82B3D3;
     text-align: center;  
-    line-height: 20px;
     font-weight: 700;
     font-size: 16px;
     color: #ffffff;
     text-decoration: none;
     border-radius:4px;   
-    text-transform: uppercase;     
-}
-
-.top-wrapper {
-    margin: 0 20px 16px 20px;
-    display: flex;
-    justify-content: space-between;
+    text-transform: uppercase;   
+    min-width: 140px;
+    min-height: 37px;
+    margin: 0 0 16px 0;  
+    line-height: 37px;
 }
 
 .top-ring-title {
     margin-right: 6px;
-}
-
-.product-card-button {
- margin: 0 20px 0 0;
- padding: 9px 15px 8px 15px;
 }
 
 .product-card-button.favorites.current {
@@ -452,23 +453,26 @@ body {
 .top-ring {
     display: flex;
     justify-content: center;
-    padding: 10px 50px 10px 0;
+    padding: 10px 0 0 0;
     margin-right: 20px;
     list-style: none;
+    max-width: 120px;
 }
 
 .top {
     background-color: #F2F2F2;
+    border: none;
     text-align: center;  
-    line-height: 20px;
     font-weight: 400;
     font-size: 16px;
     color: #333333;
     text-decoration: none;
-    border-radius:4px;     
+    border-radius:4px; 
+    min-width: 140px;
+    height: 37px;    
     text-transform: uppercase;     
-    padding: 9px 15px 8px 15px;
-    margin: 0;
+    margin:0;
+    line-height: 37px;
 }
 
 .catalog-products  {
@@ -476,11 +480,10 @@ body {
 }
 
 .product-list {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0;
-    margin-bottom: 86px;
-    margin-top: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 340px);
+    gap: 18px;
+    margin-bottom: 96px;
 }
 
 .pagination-item {
@@ -497,7 +500,10 @@ body {
     text-decoration: none;
     border-radius:4px;
     text-transform: uppercase;  
-    padding: 11px 24px 12px 23px; 
+    min-width: 12px;
+    min-height: 36px;
+    padding: 12px 24px 12px 24px;
+    display: inline-block
 } 
 
 .pagination-link.pagination-current {
@@ -507,13 +513,11 @@ body {
 
 .pagination {
     display: flex;
-    margin-right: 270px;
-    padding-left: 0;
+    margin: 0 270px 0 0;
+    padding: 0;
+    align-items: center;
     list-style: none;
-}
-
-.number-wrapper {
-    display: flex;
+    min-width: 400px;
 }
 
 .select-pages {
@@ -521,16 +525,21 @@ body {
     font-size: 18px;
     line-height: 21px;
     color: #333333;
-    padding: 12px 90px 12px 20px;
-    margin: 0;
+    margin: 5px auto 0 0;
+    border-radius: 4px;
+    padding: 0 40px 0 17px;
+    min-width: 160px;
+    height: 49px;
 }
 
 .number-of-hotels {
     font-weight: 400;
     font-size: 18px;
+    width: 175px;
+    height: 22px;
     line-height: 21px;
     color: #333333;
-    margin: 19px 51px 17px 0;
+    margin: 20px 51px 17px 0;
 }
 
 .aside-footer {
@@ -732,7 +741,6 @@ body {
     margin-right: 1017px;
     margin-left: 72px;
     margin-top: 0;
-    margin-bottom: 0;
     padding-right: 10px;
     margin-bottom: 40px;
 }
@@ -756,6 +764,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    min-width: 1100px;
     margin: 0px 0px 56px 0px;
 }
 
@@ -825,4 +834,6 @@ body {
 
 .mode {
     display: flex;
+    flex-wrap: wrap;
+    min-width: 160px;
 }
