@@ -60,10 +60,8 @@ body {
 
 .navigation-link {
     /*font-size: 20px; */
-    display: block;
     position: relative;
     padding: 20px 0 20px 0;
-    font-family: "PT Sans";
     line-height: 26px;
     font-weight: 700;
     text-align: center;
@@ -73,9 +71,7 @@ body {
     text-transform: capitalize;
 }
 .navigation-link-user {
-    display: block;
-    position: re;
-    font-family: "PT Sans";
+    position: relative;
     line-height: 26px;
     font-weight: 700;
     text-align: center;
@@ -300,25 +296,48 @@ body {
 
 .mode {
     display: flex;
-    justify-content: space-between;
-    min-width: 160px;
 }
-.icon {
+/*.icon {
     fill: #000000;
     position: relative;
     left: 0;
     right: 0;
     top: 0;
     bottom: 0;
-    margin: auto;
-}
+    margin: auto; 
+}*/
 .button-mode {
-    position: relative;
-    border: 2px solid #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #E5E5E5;
     border-radius: 4px; 
-    min-width: 48px;
-    min-height: 48px;
+    width: 44px;
+    height: 44px;
+    margin-right: 8px;
 }
+
+.actual-button-mode {
+    border: 2px solid #000000;    
+}
+
+.button-mode:hover {
+    border: 2px solid #000000;     
+}
+
+.button-mode:focus {
+    border: 2px solid #68A2CA;   
+    outline: none;   
+}
+
+.button-mode:active {
+    border: 2px solid #000000; 
+}
+
+.button-mode:last-child {
+    margin: 0;
+}
+
 .button-more {
     background-color: #756157;
     text-align: center;  
@@ -379,12 +398,44 @@ body {
 }
 
 .control {
+    display: block;
+    position: relative;
+    padding-left: 19px; 
+}
+
+.control-mark {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    top: 0;
+    left: 0;
+}
+
+.control-mark:hover {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.control-mark:focus {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.control-mark:active {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.control-label {
     line-height: 21px;
     font-weight: 400;
     font-size: 18px;
     color: #ffffff;
     text-align: center;
-    text-decoration: none;    
+    text-decoration: none;       
+}
+
+.control-imput:disabled + .control-mark {
+    background-color: #000000;
 }
 
 .find-hotel {
@@ -1003,12 +1054,13 @@ body {
 .range-input {
     width: 100%;
     box-sizing: border-box;
-    padding: 14px 114px 13px 19px;
+    padding: 14px 14px 13px 19px;
     font: inherit;
-    text-align: center;
     background-color: transparent;
     border: 2px solid #ffffff;
     color: #ffffff;
+    font-size: 18px;
+    line-height: 21px;
     appearance: textfield;
 }
 
