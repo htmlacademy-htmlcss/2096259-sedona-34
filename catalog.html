@@ -90,7 +90,7 @@
                     <ul class = "catalog-filter-list">
                         <li class = "catalog-filter-item">
                             <label  class = "control">
-                                <input class = "control-input" type = "checkbox" name = "Swimpool" value = "Бассейн" disabled>
+                                <input class = "control-input visually-hidden" type = "checkbox" name = "Swimpool" value = "Бассейн" checked>
                                     <span class = "control-mark"></span>
                                     <span class = "control-label">
                                         Бассейн
@@ -99,7 +99,7 @@
                         </li>
                         <li class = "catalog-filter-item">
                             <label  class = "control">
-                                <input class = "control-input" type = "checkbox" name = "Parking" value = "Парковка" disabled>
+                                <input class = "control-input visually-hidden" type = "checkbox" name = "Parking" value = "Парковка" checked>
                                 <span class = "control-mark"></span>
                                 <span class = "control-label">
                                     Парковка
@@ -108,7 +108,7 @@
                         </li>
                         <li class = "catalog-filter-item">
                             <label  class = "control">
-                                <input class = "control-input" type = "checkbox" name = "Wi-Fi" value = "Wi-fi" disabled>
+                                <input class = "control-input visually-hidden" type = "checkbox" name = "Wi-Fi" value = "Wi-fi">
                                 <span class = "control-mark"></span>
                                 <span class = "control-label">
                                      Wi-Fi
@@ -124,20 +124,29 @@
                     <ul class = "catalog-filter-list">
                         <li class = "catalog-filter-item">
                             <label  class = "control">
-                                <input class = "control-input" type = "radio" name = "housing" value = "Гостиница" checked>
+                                <input class = "control-input visually-hidden" type = "radio" name = "housing" value = "Гостиница" checked>
+                                <span class = "control-mark-host"></span>
+                                <span class = "control-label">
                                     Гостиница
+                                </span>
                             </label >
                         </li>
                         <li class = "catalog-filter-item">
                             <label  class = "control">
-                                <input class = "control-input" type = "radio" name = "housing" value = "Мотель">
+                                <input class = "control-input visually-hidden" type = "radio" name = "housing" value = "Мотель">
+                                <span class = "control-mark-host"></span>
+                                <span class = "control-label">
                                     Мотель
+                                </span>
                             </label >
                         </li>
                         <li class = "catalog-filter-item">
                             <label  class = "control">
-                                <input class = "control-input" type = "radio" name = "housing" value = "Апартаменты">
+                                <input class = "control-input visually-hidden" type = "radio" name = "housing" value = "Апартаменты">
+                                <span class = "control-mark-host"></span>
+                                <span class = "control-label">
                                     Апартаменты
+                                </span>
                             </label >
                         </li>
                     </ul>
@@ -380,19 +389,17 @@
         </section>        
     </main>    
     <footer class = "aside-footer">
-        <h3>
+        <h2 class = "visually-hidden">Подписка</h2>
+        <p class = "subscription-title-footer">
           Подпишитесь на рассылку
-        </h3>
-        <p>
+        </p>
+        <p class = "subscription-subtitle-footer">
           Только полезная информация и никакого спама,<br>
            честное бойскаутское!
         </p>
-        <form class = "follow-form" action="https://htmlacademy.ru/study" method="post">
-          <label>
-            <span class= "visually-hidden">Введите e-mail</span>
-          </label>
-            <input type="email" placeholder="Ваш e-mail"  name="username" class = "mail-follow">
-          <button class = "submit-follow" type = "submit" value="Подписаться на рассылку">
+        <form class = "follow-form" action="https://htmlacademy.ru" method="post">
+            <input type="email" placeholder="Ваш e-mail"  name="newsletter-email" class = "field" required>
+            <button class = "button submit-follow button-type-2" type = "submit" value="Подписаться на рассылку">
             Подписаться
           </button>
         </form>
