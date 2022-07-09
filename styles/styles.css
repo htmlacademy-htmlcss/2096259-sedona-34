@@ -73,9 +73,8 @@ body {
     text-transform: capitalize;
 }
 .navigation-link-user {
-    padding: 24px 12px 24px 12px;
     display: block;
-    position: relative;
+    position: re;
     font-family: "PT Sans";
     line-height: 26px;
     font-weight: 700;
@@ -84,6 +83,10 @@ body {
     background-color: #ffffff;
     text-decoration: none;
     text-transform: capitalize;
+    width: 18px;
+    height: 18px;
+    margin: 0;
+    padding: 0;
 }
 
 .navigation-link.want {
@@ -104,7 +107,10 @@ body {
 
 
 .navigation-item-user {
-
+    position: relative;
+ min-height: 65px;
+ min-width: 66px;
+ padding: 24px 12px 24px 12px;
 }
 .navigation-item:not(:last-child) {
     margin: 0 34px 0 0;
@@ -200,13 +206,20 @@ body {
     text-align: center;    
 }
 
-.advantages-icon {
-    margin-top: 80px;
-    margin-bottom: 0;
-    padding-bottom: 30px;
-    margin-left: 161px;
-    margin-right: 161px;
-    text-align: center;
+.social-icon {
+    fill: #83B3D3; 
+}
+
+.social-icon:hover {
+    fill: #68A2CA;
+}
+
+.social-icon:focus {
+    fill: #68A2CA;
+}
+
+.social-icon:active {
+    fill: rgba(104, 162, 202, 0.3);
 }
 
 .advantages-subtitle {
@@ -301,8 +314,8 @@ body {
 }
 .button-mode {
     position: relative;
-/*    border: 2px solid #000000;
-    border-radius: 4px; */
+    border: 2px solid #000000;
+    border-radius: 4px; 
     min-width: 48px;
     min-height: 48px;
 }
@@ -674,11 +687,24 @@ body {
     line-height: 40px;
     font-weight: 400;
     font-size: 40px;
-    color: #000000;
     background-color: #ffffff;
     text-decoration: none;
     text-transform: uppercase; 
+    color: #000000;
 }
+
+.contacts-info:hover {
+    color: #756157
+}
+
+.contacts-info:focus {
+    color: #756157
+}
+
+.contacts-info:active {
+    color: rgba(117, 97, 87, 0.3);
+}
+
 
 .inner-header {
     background-image: url("../images/cataloge/background-cataloge.jpg");
@@ -754,19 +780,13 @@ body {
 }
 
 .social-link {
-   /* display: inline-block;
-    padding-right: 27px; */
-    display: block;
-    background-size: 24px 14px;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 44px;
-    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 47px;
+    height: 40px;
+}
 
-}
-.social-link-vk {
-    background-image: url("../images/footer/vk.svg");
-}
 .contacts-link {
     display: block;
     background-size: 24px 14px;
@@ -786,6 +806,13 @@ body {
     display: flex;
     justify-content: center;
 
+}
+
+.footer-social-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .logo-welcome {
@@ -912,4 +939,89 @@ body {
     bottom: 0;
     left: 0;
     fill: #000000;
+}
+.catalog-product-filters {
+    width: 287px;
+    margin: 0 70px 0 105px;
+    padding: 0;
+    border: 0;
+    color: #ffffff;
+}
+
+.range-scale {
+    position: relative;
+    height: 4px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.range-bar {
+    position: absolute;
+    height: 4px;
+    background-color: #ffffff;
+}
+
+.range-toggle {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.range-toggle:hover {
+    /*тени*/
+}
+
+.range-toggle:focus {
+    border: 3px solid #83B3D3;
+    /*тени*/
+}
+
+.range-toggle:active {
+    border: 2px solid #83B3D3;
+    /*тени*/
+}
+
+.toggle-min {
+    top: -8px;
+    left: 0px;
+}
+
+.toggle-max {
+    top: -8px;
+    right: -11px
+}
+
+.range-wrapper-inputs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 32px;
+    margin-top: 34px;
+}
+
+.range-input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 14px 114px 13px 19px;
+    font: inherit;
+    text-align: center;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    appearance: textfield;
+}
+
+.range-input.left {
+    border-radius: 4px 0px 0px 4px;
+}
+
+.range-input.right {
+    border-radius: 0px 4px 4px 0px;       
+}
+
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+    appearance: none;
+    margin: 0;
 }
