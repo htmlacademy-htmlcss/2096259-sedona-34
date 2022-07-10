@@ -9,11 +9,11 @@
     <header class = "navigation-header">
       <nav class = "navigation">
         <a class = "navigation-logo" href = "index.html">
-          <img class = "page-header-logo" alt = "Логотип Седона" src = "images/header/logo.svg" aria-hidden="true" focusable = "false" width = "139" height = "70" viewBox = "0 0 139 70">
+          <img class = "page-header-logo" alt = "Логотип Седона" src = "images/header/logo.svg" width = "139" height = "70">
         </a>
         <ul class="navigation-list reset-list">
           <li class = "navigation-item">
-            <a class = "navigation-link current" href = "index.html">
+            <a class = "navigation-link" href = "index.html">
               Главная
             </a>
           </li>
@@ -23,7 +23,7 @@
             </a>
           </li>
           <li class = "navigation-item">
-            <a class = "navigation-link" href = "#">
+            <a class = "navigation-link current-catalog" href = "#">
               Гостиницы
             </a>
           </li>
@@ -47,12 +47,10 @@
                   1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4a3.7 3.7 0 0 0-2.71-1.3c-1.8 0-3.31 1.5-3.31 3.3-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z"></svg>
             </a>
           </li>
-          <li class = "navigation-item">
-            <a class = "navigation-link want" href = "#"> 
+        </ul>
+            <a class = "navigation-link want button button-type-1" href = "#"> 
               Хочу сюда!
             </a>
-            </li>
-        </ul>
       </nav> 
     </header>
     <main class = "main-inner">
@@ -64,12 +62,12 @@
         <ul class = "breadcrumbs">
             <li class = "breadcrumbs-item">
                 <a  href = "index.html">
-                    <img class = "icon" src="images/cataloge/union.svg" aria-hidden="true" focusable = "false" alt="Переход на гланую" width = "12" height = "12" viewBox = "0 0 12 12">
+                    <svg class = "breadcrumbs-icon" src="images/cataloge/union.svg" aria-hidden="true" focusable = "false" alt="Переход на гланую" width = "12" height = "12" viewBox = "0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="m.16 6.15 6-5.5 6 5.5v6.2h-12v-6.2Zm1 .4v4.8h10v-4.8l-5-4.5-5 4.5Zm4 3.8h-1v-3.5h4v3.5h-1v-2.5h-2v2.5Z"/></svg>
                     <span class = "visually-hidden">Главная</span>
                 </a>
             </li>
             <li class = "breadcrumbs-item">
-                <img class = "icon" alt = "Стрелочка от Главной к каталогу" src = "images/cataloge/vector.svg" aria-hidden="true" focusable = "false" width = "5" height = "8" viewBox = "0 0 5 8">
+                <img class = "vector-icon" alt = "Стрелочка от Главной к каталогу" src = "images/cataloge/vector.svg">
             </li>
             <li class = "breadcrumbs-item">
                 <a class = "breadcrumbs-link-current">
@@ -152,7 +150,7 @@
                     </ul>
                 </fieldset>
                 <fieldset class="catalog-product-filters">
-                    <legend class catalog-filter-title>Стоимость,₽:</legend>
+                    <legend class catalog-filter-title>Стоимость, ₽:</legend>
                         <div class = "range">
                             <div class="range-wrapper-inputs">
                                 <label class = "catalog-filter-label">
@@ -175,7 +173,7 @@
                         </div>
                 </fieldset>
             <div class = "catalog-filter-button">
-                <button class = "button-use" type = "submit">
+                <button class = "button-use button-type-2" type = "submit">
                     Применить
                 </button>
                 <button class = "button-reset" type = "reset">
@@ -190,7 +188,7 @@
             <h2 class = "find-hotel">
                 Найдено гостиниц: 38
             </h2>
-            <select class = "select-control" aria-label ="Сортировка">
+            <select class = "select-control select-style" aria-label ="Сортировка">
                 <option value="cheap">
                     Сначала дешёвые
                 </option>
@@ -238,10 +236,10 @@
                     <b class = "product-card-price">
                         от 4000₽
                     </b>
-                    <a class = "product-card-button more" href = "#">
+                    <a class = "product-card-button more button-type-1" href = "#">
                         Подробнее
                     </a>
-                    <a class = "product-card-button favorites" href = "#">
+                    <a class = "product-card-button favorites button-type-2" href = "#">
                         В избранное
                     </a>
                     <ul class = "top-ring">
@@ -268,10 +266,10 @@
                     <b class = "product-card-price">
                         от 5000₽
                     </b>
-                    <a class = "product-card-button more" href = "#">
+                    <a class = "product-card-button more button-type-1" href = "#">
                         Подробнее
                     </a>
-                    <a class = "product-card-button favorites current" href = "#">
+                    <a class = "product-card-button favorites current button-type-3" href = "#">
                         В избранное
                     </a>
                 <ul class = "top-ring">
@@ -297,10 +295,10 @@
                     <b class = "product-card-price">
                         от 2500₽
                     </b>
-                    <a class = "product-card-button more" href = "#">
+                    <a class = "product-card-button more button-type-1" href = "#">
                         Подробнее
                     </a>
-                    <a class = "product-card-button favorites" href = "#">
+                    <a class = "product-card-button favorites button-type-2" href = "#">
                         В избранное
                     </a>
                     <ul class = "top-ring">
@@ -325,10 +323,10 @@
                     <b class = "product-card-price">
                         от 1500₽
                     </b>
-                    <a class = "product-card-button more" href = "#">
+                    <a class = "product-card-button more button-type-1" href = "#">
                         Подробнее
                     </a>
-                    <a class = "product-card-button favorites" href = "#">
+                    <a class = "product-card-button favorites button-type-2" href = "#">
                         В избранное
                     </a>
                     <ul class = "top-ring">
@@ -346,27 +344,27 @@
                     </a>
                 </li>
                 <li class = "pagination-item">
-                    <a class = "pagination-link" href = "#">
+                    <a class = "pagination-link button-type-2" href = "#">
                         2
                     </a>
                 </li>
                 <li class = "pagination-item">
-                    <a class = "pagination-link" href = "#">
+                    <a class = "pagination-link button-type-2" href = "#">
                         3
                     </a>
                 </li>
                 <li class = "pagination-item">
-                    <a class = "pagination-link" href = "#">
+                    <a class = "pagination-link button-type-2" href = "#">
                         4
                     </a>
                 </li>
                 <li class = "pagination-item">
-                    <a class = "pagination-link padination-show-more" href = "#">
+                    <a class = "pagination-link padination-show-more button-type-2" href = "#">
                         ...
                     </a> 
                 </li>
                 <li class = "pagination-item">
-                    <a class = "pagination-link" href = "#">
+                    <a class = "pagination-link button-type-2" href = "#">
                         10
                     </a>
                 </li>
@@ -374,7 +372,7 @@
             <h3 class = "number-of-hotels">
                 Гостиниц на странице:
             </h3>
-            <select class = "select-pages" aria-label ="Кол-во">
+            <select class = "select-pages select-style" aria-label ="Кол-во">
                 <option value="4" >
                     4
                 </option>
@@ -430,19 +428,13 @@
             </li>
           </ul>
         </section>
-        <section class = "footer-contacts">
-          <h2>
-            <a class = "phone contacts-info" href = "tel:+78128121212">
+            <a class = "phone" href = "tel:+78128121212">
               +7 (812) 812-12-12
             </a>
-          </h2>
-        </section>
-        <section class = "footer-contacts">
-            <a class = "contacts-link" href = "https://htmlacademy.ru/">
-                 <svg class = "contacts-info" src="images/footer/html-academy.svg" aria-hidden="true" focusable = "false" alt="Лого html academy" width = "115" height = "33" viewBox = "0 0 115 33" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 12.9v2.6h2.5v-2.6H0ZM11.6 4.5c-1.6 0-2.8.7-3.6 1.7h-.1V0h-2v15.5h2v-5.3c0-2.1 1.3-3.6 3.3-3.6 1.8 0 2.9 1.4 2.9 3.2v5.7h2V9.4c.1-3-1.8-4.9-4.5-4.9ZM26.6 4.8h-4.8V1.1h-2v3.8h-1.9v2h1.9v6c0 1.7 1 2.7 2.7 2.7h4.1v-2h-3.7c-.7 0-1.1-.4-1.1-1.1V6.8h4.8v-2ZM41.1 4.6c-1.6 0-2.9.8-3.5 2.1h-.1a3.7 3.7 0 0 0-3.4-2.1c-1.4 0-2.5.8-3.1 1.8h-.1V4.8H29v10.6h2V10c0-2 1-3.5 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2V9.8c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2V8.9c.1-2.5-1.4-4.3-3.9-4.3ZM47.8 12.7c0 1.7 1 2.7 2.8 2.7h2v-2h-1.7c-.7 0-1.1-.4-1.1-1.1V0h-2v12.7ZM28.9 19.7a4.9 4.9 0 0 0-3.9-1.8c-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2V18.2h-2v1.5Zm-3.6 7.4a3.5 3.5 0 0 1-3.6-3.6c0-2 1.4-3.6 3.6-3.6s3.6 1.6 3.6 3.6c0 1.9-1.4 3.6-3.6 3.6ZM44.2 22c-.5-2.4-2.6-4.1-5.4-4.1a5.4 5.4 0 0 0-5.6 5.6c0 3.1 2.2 5.6 5.6 5.6 2.8 0 4.9-1.8 5.4-4.2h-2.1a3.4 3.4 0 0 1-3.3 2.3 3.5 3.5 0 0 1-3.6-3.6c0-2 1.4-3.6 3.6-3.6 1.6 0 2.8 1 3.3 2.2h2.1V22ZM55.1 19.7a4.9 4.9 0 0 0-3.9-1.8c-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2V18.2h-2v1.5Zm-3.6 7.4a3.5 3.5 0 0 1-3.6-3.6c0-2 1.4-3.6 3.6-3.6s3.6 1.6 3.6 3.6c0 1.9-1.5 3.6-3.6 3.6ZM68.7 19.8a5 5 0 0 0-3.9-1.9c-3.1 0-5.4 2.3-5.4 5.6s2.2 5.6 5.4 5.6c1.7 0 3-.8 3.8-1.8h.1v1.5h2V13.4h-2v6.4Zm-3.6 7.3a3.5 3.5 0 0 1-3.6-3.6c0-2 1.4-3.6 3.6-3.6s3.6 1.6 3.6 3.6c-.1 2-1.5 3.6-3.6 3.6ZM78.3 17.9a5.4 5.4 0 0 0-5.5 5.6c0 3 2.1 5.6 5.5 5.6 2.5 0 4.5-1.3 5.2-3.6h-2.1c-.5 1-1.6 1.6-3 1.6-1.9 0-3.3-1.3-3.4-2.9h8.8c.2-3.6-2-6.3-5.5-6.3Zm0 1.9c1.7 0 3 1 3.3 2.6h-6.5a3.2 3.2 0 0 1 3.2-2.6ZM98.2 17.9a4 4 0 0 0-3.6 2h-.1c-.6-1.2-1.8-2-3.4-2-1.4 0-2.5.7-3.1 1.8v-1.5h-1.9v10.6h2v-5.4c0-2 1-3.4 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2v-5.6c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2v-6.5c.1-2.6-1.4-4.4-3.9-4.4ZM109.4 27l-3.6-8.9h-2.2l4.8 11.6c-.3.9-.7 1.2-1.7 1.2h-2.5v2h2.5c1.8 0 2.8-.8 3.5-2.6l4.7-12.2h-2.1l-3.4 8.9Z"/></svg> 
+            <a class = "contacts-link-htmlacademy" href = "https://htmlacademy.ru/">
+                 <svg class = "contacts-info" src="images/footer/html-academy.svg" aria-hidden="true" focusable = "false" alt="Лого html academy" width = "115" height = "33" viewBox = "0 0 33 115" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 12.9v2.6h2.5v-2.6H0ZM11.6 4.5c-1.6 0-2.8.7-3.6 1.7h-.1V0h-2v15.5h2v-5.3c0-2.1 1.3-3.6 3.3-3.6 1.8 0 2.9 1.4 2.9 3.2v5.7h2V9.4c.1-3-1.8-4.9-4.5-4.9ZM26.6 4.8h-4.8V1.1h-2v3.8h-1.9v2h1.9v6c0 1.7 1 2.7 2.7 2.7h4.1v-2h-3.7c-.7 0-1.1-.4-1.1-1.1V6.8h4.8v-2ZM41.1 4.6c-1.6 0-2.9.8-3.5 2.1h-.1a3.7 3.7 0 0 0-3.4-2.1c-1.4 0-2.5.8-3.1 1.8h-.1V4.8H29v10.6h2V10c0-2 1-3.5 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2V9.8c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2V8.9c.1-2.5-1.4-4.3-3.9-4.3ZM47.8 12.7c0 1.7 1 2.7 2.8 2.7h2v-2h-1.7c-.7 0-1.1-.4-1.1-1.1V0h-2v12.7ZM28.9 19.7a4.9 4.9 0 0 0-3.9-1.8c-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2V18.2h-2v1.5Zm-3.6 7.4a3.5 3.5 0 0 1-3.6-3.6c0-2 1.4-3.6 3.6-3.6s3.6 1.6 3.6 3.6c0 1.9-1.4 3.6-3.6 3.6ZM44.2 22c-.5-2.4-2.6-4.1-5.4-4.1a5.4 5.4 0 0 0-5.6 5.6c0 3.1 2.2 5.6 5.6 5.6 2.8 0 4.9-1.8 5.4-4.2h-2.1a3.4 3.4 0 0 1-3.3 2.3 3.5 3.5 0 0 1-3.6-3.6c0-2 1.4-3.6 3.6-3.6 1.6 0 2.8 1 3.3 2.2h2.1V22ZM55.1 19.7a4.9 4.9 0 0 0-3.9-1.8c-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2V18.2h-2v1.5Zm-3.6 7.4a3.5 3.5 0 0 1-3.6-3.6c0-2 1.4-3.6 3.6-3.6s3.6 1.6 3.6 3.6c0 1.9-1.5 3.6-3.6 3.6ZM68.7 19.8a5 5 0 0 0-3.9-1.9c-3.1 0-5.4 2.3-5.4 5.6s2.2 5.6 5.4 5.6c1.7 0 3-.8 3.8-1.8h.1v1.5h2V13.4h-2v6.4Zm-3.6 7.3a3.5 3.5 0 0 1-3.6-3.6c0-2 1.4-3.6 3.6-3.6s3.6 1.6 3.6 3.6c-.1 2-1.5 3.6-3.6 3.6ZM78.3 17.9a5.4 5.4 0 0 0-5.5 5.6c0 3 2.1 5.6 5.5 5.6 2.5 0 4.5-1.3 5.2-3.6h-2.1c-.5 1-1.6 1.6-3 1.6-1.9 0-3.3-1.3-3.4-2.9h8.8c.2-3.6-2-6.3-5.5-6.3Zm0 1.9c1.7 0 3 1 3.3 2.6h-6.5a3.2 3.2 0 0 1 3.2-2.6ZM98.2 17.9a4 4 0 0 0-3.6 2h-.1c-.6-1.2-1.8-2-3.4-2-1.4 0-2.5.7-3.1 1.8v-1.5h-1.9v10.6h2v-5.4c0-2 1-3.4 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2v-5.6c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2v-6.5c.1-2.6-1.4-4.4-3.9-4.4ZM109.4 27l-3.6-8.9h-2.2l4.8 11.6c-.3.9-.7 1.2-1.7 1.2h-2.5v2h2.5c1.8 0 2.8-.8 3.5-2.6l4.7-12.2h-2.1l-3.4 8.9Z"/></svg> 
               <span class="visually-hidden">Ссылка на .html academy</span>
             </a>
-        </section>
       </footer>
     </body>
   </html>

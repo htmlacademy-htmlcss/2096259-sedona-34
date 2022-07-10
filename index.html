@@ -9,16 +9,16 @@
     <header class = "navigation-header">
       <nav class = "navigation">
         <a class = "navigation-logo" href = "index.html">
-          <img class = "page-header-logo" alt = "Логотип Седона" aria-hidden="true" focusable = "false" src = "images/header/logo.svg" width = "139" height = "70" viewBox = "0 0 139 70">
+          <img class = "page-header-logo" alt = "Логотип Седона" src = "images/header/logo.svg" width = "139" height = "70">
         </a>
         <ul class="navigation-list reset-list">
           <li class = "navigation-item">
-            <a class = "navigation-link-current" href = "#">
+            <a class = "navigation-link current-index" href = "#">
               Главная
             </a>
           </li>
           <li class = "navigation-item">
-            <a class = "navigation-link" href = "#">
+            <a class = "navigation-link" href = "about.html">
               О Седоне
             </a>
           </li>
@@ -29,28 +29,28 @@
           </li>
         </ul>
         <ul class="navigation-user reset-list">
-          <li class = "navigation-item">
-            <a class = "navigation-link" href = "#">
-              <span >
-                <img class = "icon" src="images/header/search.svg" aria-hidden="true" focusable = "false" alt="Поиск" width = "18" height = "18" viewBox = "0 0 18 18">
+          <li class = "navigation-item-user">
+            <a class = "navigation-link-user" href = "#">
                 <span class = "visually-hidden">Поиск</span>
-              </span>
+                <svg class = "navigation-icon" src="images/header/search.svg" aria-hidden="true" focusable = "false" width = "18" height = "18" viewBox = "0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+                    <path d="m18.159 17.05-3.711-3.7c1.003-1.3 1.705-3 1.705-4.9 0-4.4-3.61-8-8.023-8C3.718.45.107 4.15.107 8.55c0 4.4 3.61 8 8.023 8 1.805 0 3.51-.6 4.914-1.7l3.71
+                     3.7 1.404-1.5ZM8.13 14.55c-3.31 0-6.017-2.7-6.017-6s2.708-6 6.017-6c3.31 0 6.017 2.7 6.017 6s-2.707 6-6.017 6Z"/> 
+                </svg>
             </a>
           </li>
-          <li class = "navigation-item">
-            <a class = "navigation-link" href = "#">
-              <span >
-                <img class = "icon" src="images/header/favorite.svg" aria-hidden="true" focusable = "false" alt="Избранное" width = "18" height = "17" viewBox = "0 0 18 17">
+          <li class = "navigation-item-user">
+            <a class = "navigation-link-user" href = "#">
                 <span class = "visually-hidden">Избранное</span>
-              </span>
-            </a>
-          </li>
-          <li class = "navigation-item">
-            <a class = "navigation-link want" href = "#"> 
-              Хочу сюда!
+                <svg class = "navigation-icon" src="images/header/favorite.svg" aria-hidden="true" focusable = "false" alt="Избранное" width = "18" height = "17" viewBox = "0 0 18 17" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.58 17c-.3 0-.6-.1-.8-.4-5.42-6.1-6.72-7.5-7.03-7.9A5.4 5.4 0 0 1 6.16 0c1.31 0 2.51.5 3.52 1.3a5.47 5.47 0 0 1 9.03 4.1c0 1.3-.5 2.5-1.31
+                 3.4l-7.02 7.9c-.2.2-.4.3-.8.3ZM3.56 7.5c.3.4 3.51 4 6.12 6.9l6.21-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.71
+                  1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4a3.7 3.7 0 0 0-2.71-1.3c-1.8 0-3.31 1.5-3.31 3.3-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z"></svg>
             </a>
           </li>
         </ul>
+            <a class = "navigation-link want button button-type-1" href = "#"> 
+              Хочу сюда!
+            </a>
       </nav> 
     </header>
     <main class="main-inner">
@@ -68,7 +68,6 @@
         Sedona. Because the grand canyon suchs!
       </h1>
       <img class = "logo sedona" src="images/index/sedona.svg" alt = "Логотип Sedona" width = "457" height = "213">
-      <img class = "decoration" src="images/index/background-decoration.svg" aria-hidden="true" focusable = "false" alt="Декоративный элемент фона" width = "1200" height = "29" viewBox = "0 0 1200 29">
     </header>
     </div>
     <div class = "page-container">
@@ -103,8 +102,7 @@
           </div>
         </li>
         <li class = "advantages-item photo">
-         <div class="wrapper-for-list blue12">
-          <img class = "advantages-icon" src="images/index/home.svg" aria-hidden="true" focusable = "false" alt = "Иконка домика" width = "75" height = "72" viewBox = "0 0 75 72">
+         <div class="wrapper-for-list blue12 house-image">
             <h4 class = "advantages-title-privilege">
                 Жильё
             </h4>
@@ -112,8 +110,7 @@
                 Рекомендуем пожить <br> в настоящем мотеле, <br> всё как в кино!
            </p>
          </div>
-         <div class="wrapper-for-list">
-            <img class = "advantages-icon" src="images/index/food.svg" aria-hidden="true" focusable = "false" alt = "Иконка бургера" width = "74" height = "70" viewBox = "0 0 74 70">
+         <div class="wrapper-for-list food-image">
               <h4 class = "advantages-title-privilege">
                 Еда
               </h4>
@@ -121,8 +118,7 @@
                 Всегда заказывайте <br> топовый фирменный бургер, <br> вы не разочаруетесь!
               </p>
           </div>
-          <div class="wrapper-for-list blue12">
-              <img class = "advantages-icon" src="images/index/present.svg" aria-hidden="true" focusable = "false" alt = "Иконка подарка" width = "64" height = "76" viewBox = "0 0 64 76">
+          <div class="wrapper-for-list blue12 present-image">
               <h4 class = "advantages-title-privilege">
                 Сувениры
               </h4>
@@ -192,7 +188,7 @@
         Укажите предполагаемые даты поездки,<br>
         и мы покажем вам лучшие предложения гостиниц в Седоне
       </p>
-      <a class = "button-more" href = "#">
+      <a class = "button-more button-type-1" href = "#">
         Поиск гостиницы в Седоне
       </a>
     </section> 
@@ -214,43 +210,40 @@
       </button>
     </form>
   </footer>
-    <footer class = "page-footer">
-      <section class = "footer-social">
-        <h2 >
-          <a class = "social-link" href = "https://vk.com/htmlacademy">
-            <img class = "icon" src="images/footer/vk.svg" aria-hidden="true" focusable = "false" alt="Лого вконтакте" width = "21" height = "14" viewBox = "0 0 21 14">
-            <span class="visually-hidden">vk</span>
-          </a>
-        </h2>
-        <h2>
-          <a class = "social-link" href = "https://t.me/htmlacademy">
-            <img class = "icon" src="images/footer/tg.svg" aria-hidden="true" focusable = "false" alt="Лого телеграма" width = "18" height = "16" viewBox = "0 0 18 16">
-            <span class="visually-hidden">telegram</span>
-          </a>
-        </h2>
-        <h2>
-          <a class = "social-link" href = "https://www.youtube.com/user/htmlacademyru">
-            <img class = "icon" src="images/footer/youtube.svg" aria-hidden="true" focusable = "false" alt="Лого ютюба" width = "22" height = "17" viewBox = "0 0 22 17">
-            <span class="visually-hidden">youtube</span>
-          </a>
-        </h2>
-      </section>
-      <section class = "footer-contacts">
-        <h2>
-          <a class = "phone" href = "tel:+78128121212">
-            +7 (812) 812-12-12
-          </a>
-        </h2>
-      </section>
-      <section class = "footer-contacts">
-        <h2>
-          <a class = "contacts-link" href = "https://htmlacademy.ru/">
-            <img class = "icon" src="images/footer/HTML-Academy.svg" aria-hidden="true" focusable = "false" alt="Лого html academy" width = "115" height = "33" viewBox = "0 0 115 33">
-            <span class="visually-hidden">Ссылка на .html academy</span>
-          </a>
-        </h2>
-      </section>
-    </footer>
+  <footer class = "page-footer">
+    <section class = "footer-social">
+      <h2 class = "visually-hidden">Социальные сети</h2>
+      <ul class = "footer-social-list reset-list">
+        <li class = "footer-social-item">
+        <a class = "social-link" href = "https://vk.com/htmlacademy">
+         <svg class = "social-icon" src="images/footer/vk.svg" aria-hidden="true" focusable = "false" alt="Лого вконтакте" width = "24" height = "14" viewBox = "0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M24.12.95c.16-.55 0-.95-.8-.95H20.7c-.67 0-.98.35-1.15.73 0 0-1.33 3.2-3.22 5.27-.61.6-.9.8-1.23.8-.16 0-.41-.2-.41-.74V.95c0-.66-.19-.95-.74-.95H9.82c-.42 0-.67.3-.67.6 0 .61.95.76 1.04 2.5v3.8c0 .84-.15.99-.48.99-.9 0-3.06-3.21-4.34-6.89-.25-.71-.5-1-1.18-1H1.57c-.75 0-.9.35-.9.73 0 .68.89 4.07 4.14 8.55 2.17 3.06 5.23 4.72 8 4.72 1.68 0 1.88-.37 1.88-1v-2.32c0-.73.16-.88.7-.88.38 0 1.05.2 2.6 1.67 1.79 1.75 2.08 2.53 3.08 2.53h2.63c.75 0 1.12-.37.9-1.1-.23-.72-1.08-1.77-2.2-3.02-.62-.7-1.54-1.47-1.82-1.86-.39-.49-.28-.7 0-1.14 0 0 3.2-4.43 3.54-5.93Z"/></svg>
+          <span class="visually-hidden">vk</span>
+        </a>
+        </li>
+        <li class = "footer-social-item">
+        <a class = "social-link" href = "https://t.me/htmlacademy">
+          <svg class = "social-icon" src="images/footer/tg.svg" aria-hidden="true" focusable = "false" alt="Лого телеграма" width = "18" height = "16" viewBox = "0 0 18 16"fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16.785 0.0992597L0.840489 6.24776C-0.247661 6.68481 -0.241365 7.29184 0.640845 7.56253L4.73445 8.83953L14.2058 2.8637C14.6537 2.59121 15.0629 2.7378 14.7265 3.03636L7.05283 9.96185H7.05103L7.05283 9.96275L6.77045 14.1823C7.18413 14.1823 7.36669 13.9925 7.59871 13.7686L9.58705 11.8351L13.7229 14.89C14.4855 15.31 15.0332 15.0941 15.2229 14.1841L17.9379 1.38885C18.2158 0.274623 17.5126 -0.229883 16.785 0.0992597Z"/>
+            </svg>
+          <span class="visually-hidden">telegram</span>
+        </a>
+        </li>
+        <li class="footer-social-item">
+        <a class = "social-link" href = "https://www.youtube.com/user/htmlacademyru">
+          <svg class = "social-icon" src="images/footer/youtube.svg" aria-hidden="true" focusable = "false" alt="Лого ютюба" width = "22" height = "17" viewBox = "0 0 22 17"fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18.94.5H3.51C1.65.5.33 2.1.33 3.9V14c0 1.9 1.32 3.5 3.18 3.5h15.65c1.64 0 3.17-1.6 3.17-3.4V3.9C22.11 2.1 20.8.5 18.94.5ZM7.99 13.04V4.96L15.33 9l-7.34 4.04Z"/></svg>
+          <span class="visually-hidden">youtube</span>
+        </a>
+        </li>
+      </ul>
+    </section>
+        <a class = "phone" href = "tel:+78128121212">
+          +7 (812) 812-12-12
+        </a>
+        <a class = "contacts-link-htmlacademy" href = "https://htmlacademy.ru/">
+             <svg class = "contacts-info" src="images/footer/html-academy.svg" aria-hidden="true" focusable = "false" alt="Лого html academy" width = "115" height = "33" viewBox = "0 0 33 115" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 12.9v2.6h2.5v-2.6H0ZM11.6 4.5c-1.6 0-2.8.7-3.6 1.7h-.1V0h-2v15.5h2v-5.3c0-2.1 1.3-3.6 3.3-3.6 1.8 0 2.9 1.4 2.9 3.2v5.7h2V9.4c.1-3-1.8-4.9-4.5-4.9ZM26.6 4.8h-4.8V1.1h-2v3.8h-1.9v2h1.9v6c0 1.7 1 2.7 2.7 2.7h4.1v-2h-3.7c-.7 0-1.1-.4-1.1-1.1V6.8h4.8v-2ZM41.1 4.6c-1.6 0-2.9.8-3.5 2.1h-.1a3.7 3.7 0 0 0-3.4-2.1c-1.4 0-2.5.8-3.1 1.8h-.1V4.8H29v10.6h2V10c0-2 1-3.5 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2V9.8c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2V8.9c.1-2.5-1.4-4.3-3.9-4.3ZM47.8 12.7c0 1.7 1 2.7 2.8 2.7h2v-2h-1.7c-.7 0-1.1-.4-1.1-1.1V0h-2v12.7ZM28.9 19.7a4.9 4.9 0 0 0-3.9-1.8c-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2V18.2h-2v1.5Zm-3.6 7.4a3.5 3.5 0 0 1-3.6-3.6c0-2 1.4-3.6 3.6-3.6s3.6 1.6 3.6 3.6c0 1.9-1.4 3.6-3.6 3.6ZM44.2 22c-.5-2.4-2.6-4.1-5.4-4.1a5.4 5.4 0 0 0-5.6 5.6c0 3.1 2.2 5.6 5.6 5.6 2.8 0 4.9-1.8 5.4-4.2h-2.1a3.4 3.4 0 0 1-3.3 2.3 3.5 3.5 0 0 1-3.6-3.6c0-2 1.4-3.6 3.6-3.6 1.6 0 2.8 1 3.3 2.2h2.1V22ZM55.1 19.7a4.9 4.9 0 0 0-3.9-1.8c-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2V18.2h-2v1.5Zm-3.6 7.4a3.5 3.5 0 0 1-3.6-3.6c0-2 1.4-3.6 3.6-3.6s3.6 1.6 3.6 3.6c0 1.9-1.5 3.6-3.6 3.6ZM68.7 19.8a5 5 0 0 0-3.9-1.9c-3.1 0-5.4 2.3-5.4 5.6s2.2 5.6 5.4 5.6c1.7 0 3-.8 3.8-1.8h.1v1.5h2V13.4h-2v6.4Zm-3.6 7.3a3.5 3.5 0 0 1-3.6-3.6c0-2 1.4-3.6 3.6-3.6s3.6 1.6 3.6 3.6c-.1 2-1.5 3.6-3.6 3.6ZM78.3 17.9a5.4 5.4 0 0 0-5.5 5.6c0 3 2.1 5.6 5.5 5.6 2.5 0 4.5-1.3 5.2-3.6h-2.1c-.5 1-1.6 1.6-3 1.6-1.9 0-3.3-1.3-3.4-2.9h8.8c.2-3.6-2-6.3-5.5-6.3Zm0 1.9c1.7 0 3 1 3.3 2.6h-6.5a3.2 3.2 0 0 1 3.2-2.6ZM98.2 17.9a4 4 0 0 0-3.6 2h-.1c-.6-1.2-1.8-2-3.4-2-1.4 0-2.5.7-3.1 1.8v-1.5h-1.9v10.6h2v-5.4c0-2 1-3.4 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2v-5.6c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2v-6.5c.1-2.6-1.4-4.4-3.9-4.4ZM109.4 27l-3.6-8.9h-2.2l4.8 11.6c-.3.9-.7 1.2-1.7 1.2h-2.5v2h2.5c1.8 0 2.8-.8 3.5-2.6l4.7-12.2h-2.1l-3.4 8.9Z"/></svg> 
+          <span class="visually-hidden">Ссылка на .html academy</span>
+        </a>
+  </footer>
   </body>
 </html>
 
